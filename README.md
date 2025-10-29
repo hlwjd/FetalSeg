@@ -1,12 +1,12 @@
-# FetalSeg
+# Fetal segmentation weights for nnUnetV2
 This repository contains open-source segmentation weights for nnUnetV2, used for segmenting the body and brain from 3D-FIESTA sequences of fetal MRI.
 These segmentation weights are being applied to an SCI paper, which is currently under submission.
 nnUnet link: https://github.com/MIC-DKFZ/nnUNet.
 
 My nnUnet virtual environment dependency list is as follows:
-# packages in environment at D:\miniconda3\envs\nnunet:
-#
-# Name                           Version          Build            Channel
+packages in environment at nnunet:
+
+Name                           Version          Build            Channel
 acvl-utils                       0.2.5            pypi_0           pypi
 argparse                         1.4.0            pypi_0           pypi
 batchgenerators                  0.25.1           pypi_0           pypi

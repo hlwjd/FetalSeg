@@ -10,7 +10,7 @@ def process_dicom_dir(dicom_dir, output_dir):
     except Exception as e:
         print(f"处理 {dicom_dir} 时出错: {e}")
 
-def alternative_dicom_to_nii(input_dir=r'F:\mydata\fetalBrainBody\images\1008', output_dir=r'F:\mydata\fetalBrainBody\images\1008\NIIGZ'):
+def alternative_dicom_to_nii(input_dir=r'F:\mydata\fetalBrainBody\images', output_dir=r'F:\mydata\fetalBrainBody\images\NIIGZ'):
     os.makedirs(output_dir, exist_ok=True)
     dicom_dirs = set()
     for root, dirs, files in os.walk(input_dir):
@@ -21,4 +21,5 @@ def alternative_dicom_to_nii(input_dir=r'F:\mydata\fetalBrainBody\images\1008', 
         concurrent.futures.wait(futures)
 
 if __name__ == '__main__':
+
     alternative_dicom_to_nii()
